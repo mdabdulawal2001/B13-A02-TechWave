@@ -9,3 +9,53 @@
         font-family: "Inter", sans-serif;
     }
 }
+
+/* navbar bottom Horizontal line */
+
+/* responsive designs */
+
+/* small device */
+@media screen and (max-width: 576px) {
+    /* navbar */
+
+    /* left text */
+    .tech-text{
+        font-size: 25px;
+    }
+
+    /* nav items and button */
+    .nav-items-nav-btn{
+        display: none;
+    }
+
+    /* hamburger icon */
+    .image-icon{
+        display: flex;
+    }
+}
+
+/* medium device */
+@media screen and (min-width: 576.1px) and (max-width: 992px) {
+    /* navbar */
+    .tech-text{
+        font-size: 30px;
+    }
+    .nav-btn{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    /* hamburger icon */
+    .image-icon{
+        display: none;
+    }
+}
+
+/* large device */
+@media screen and (min-width: 992.1px) {
+    /* navbar */
+
+    /* hamburger icon */
+    .image-icon{
+        display: none;
+    }
+}

@@ -12,28 +12,36 @@
     />
 
     <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/c6b3ba4e95.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c6b3ba4e95.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- css link -->
     <link rel="stylesheet" href="./styles/styles.css" />
     <!-- tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="font-inter bg-[#412567]">
+  <body class="text-white font-inter bg-[#1A0B2E]">
     <!-- start header section -->
     <header>
       <!-- start navbar section -->
       <section>
         <!-- container of navbar -->
-        <div class="flex justify-between items-center w-11/12 mx-auto pt-6">
-          <!-- left logo -->
+        <div class="flex justify-between items-center w-11/12 mx-auto py-6">
+          <!-- left text -->
           <div>
-            <h1 class="text-3xl text-white font-extrabold">Tech<span class="font-extrabold text-transparent bg-clip-text bg-linear-10 from-[#F7E93F] from-0% via-[#FB09B4] via-40% to-[#9100F8] ">Wave</span></h1>
+            <h1 class="tech-text text-4xl text-[#FFFFFF] font-extrabold">
+              Tech<span
+                class="font-extrabold text-transparent bg-clip-text bg-linear-10 from-[#F7E93F] from-0% via-[#FB09B4] via-40% to-[#9100F8]"
+                >Wave</span
+              >
+            </h1>
           </div>
 
           <!-- nav items -->
-          <nav>
-            <ul class="flex gap-4">
+          <nav class="nav-items-nav-btn">
+            <ul class="flex gap-8 text-[#FFFFFF] font-medium">
               <li><a href="">About</a></li>
               <li><a href="">Episodes</a></li>
               <li><a href="">Host</a></li>
@@ -41,17 +49,80 @@
           </nav>
 
           <!-- right button -->
-          <div>
-            <button class="">Subscribe <i class="fa-solid fa-arrow-right-long align-middle"></i></button>
+          <div class="nav-items-nav-btn">
+            <button
+              class="nav-btn text-[#FFFFFF] font-semibold px-4 py-2.5 bg-linear-20 from-[#F7E93F] from-7% via-[#FB09B4] via-45% to-[#9100F8] rounded-full cursor-pointer"
+            >
+              Subscribe
+              <i class="fa-solid fa-arrow-right-long align-middle"></i>
+            </button>
+          </div>
+          <!-- right icon -->
+          <div class="image-icon">
+            <img src="./assets/hamburger-menu.png" alt="" />
           </div>
         </div>
+        <hr class="text-white opacity-10" />
       </section>
       <!-- end navbar section -->
 
       <!-- start hero section -->
       <section>
         <!-- container of hero section -->
-        <div></div>
+        <div class="">
+          <!-- microphone image part -->
+          <div
+            class="w-full border min-h-screen flex justify-center items-center bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-center bg-contain"
+          >
+            <div
+              class="w-full h-[350px] flex justify-center items-center bg-[url(./assets/hero-circle.png)] bg-center bg-no-repeat bg-contain"
+            >
+              <img src="./assets/microphone.png" alt="" />
+            </div>
+          </div>
+
+          <!-- start text part -->
+          <!-- container of text part -->
+          <div>
+            <h1>TechWave</h1>
+            <p>
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+
+            <!-- two button part -->
+            <div class="flex gap-2">
+              <!-- 1st btn -->
+              <div>
+                <button
+                  class="nav-btn flex justify-center items-center text-[#FFFFFF] font-semibold px-5 py-2.5 bg-linear-20 from-[#F7E93F] from-7% via-[#FB09B4] via-45% to-[#9100F8] rounded-full cursor-pointer"
+                >
+                  <!-- <i class="fa-brands fa-spotify align-middle"></i> -->
+                  <div>
+                    <img
+                      class="mr-2"
+                      src="./assets/line-md_spotify.png"
+                      alt=""
+                    />
+                  </div>
+                  <p>Listen On Spotify</p>
+                </button>
+              </div>
+              <!-- 2nd btn -->
+              <div>
+                <button
+                  class="nav-btn flex justify-center items-center text-[#FFFFFF] font-semibold px-4 py-[9px] border rounded-full cursor-pointer"
+                >
+                  <div>
+                    <img class="mr-2" src="./assets/message.png" alt="" />
+                  </div>
+                  <p>Subscribe</p>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- end text part -->
+        </div>
       </section>
       <!-- end hero section -->
     </header>
