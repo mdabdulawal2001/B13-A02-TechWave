@@ -10,16 +10,19 @@
     }
 }
 
-/* navbar bottom Horizontal line */
+
 
 /* responsive designs */
 
 /* small device */
 @media screen and (max-width: 576px) {
+    /* shared styles */
+    .title-text{
+        font-size: 36px;
+    }
     /* navbar */
-
     /* left text */
-    .tech-text{
+    .nav-tech-text{
         font-size: 25px;
     }
 
@@ -32,12 +35,33 @@
     .image-icon{
         display: flex;
     }
+
+    /* hero section */
+    
+
+    .hero-tech{
+        font-size: 40px;
+    }
+
+
+    /* about section */
+    .about-text-container{
+        width: 95%;
+    }
+
+
+    .grid-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
 }
 
 /* medium device */
 @media screen and (min-width: 576.1px) and (max-width: 992px) {
     /* navbar */
-    .tech-text{
+    .nav-tech-text{
         font-size: 30px;
     }
     .nav-btn{
@@ -47,6 +71,21 @@
     /* hamburger icon */
     .image-icon{
         display: none;
+    }
+     /* hero section */
+
+    .hero-tech{
+        font-size: 50px;
+    }
+
+    /* about section */
+    .about-text-container{
+        width: 92%;
+    }
+
+    .grid-card{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

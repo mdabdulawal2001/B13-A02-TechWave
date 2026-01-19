@@ -28,10 +28,12 @@
       <!-- start navbar section -->
       <section>
         <!-- container of navbar -->
-        <div class="flex justify-between items-center w-11/12 mx-auto py-6">
+        <div
+          class="flex justify-between items-center max-w-[1200px] w-11/12 mx-auto py-6"
+        >
           <!-- left text -->
           <div>
-            <h1 class="tech-text text-4xl text-[#FFFFFF] font-extrabold">
+            <h1 class="nav-tech-text text-4xl text-[#FFFFFF] font-extrabold">
               Tech<span
                 class="font-extrabold text-transparent bg-clip-text bg-linear-10 from-[#F7E93F] from-0% via-[#FB09B4] via-40% to-[#9100F8]"
                 >Wave</span
@@ -69,66 +71,163 @@
       <!-- start hero section -->
       <section>
         <!-- container of hero section -->
-        <div class="">
-          <!-- microphone image part -->
-          <div
-            class="w-full border min-h-screen flex justify-center items-center bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-center bg-contain"
-          >
-            <div
-              class="w-full h-[350px] flex justify-center items-center bg-[url(./assets/hero-circle.png)] bg-center bg-no-repeat bg-contain"
-            >
-              <img src="./assets/microphone.png" alt="" />
-            </div>
-          </div>
-
-          <!-- start text part -->
-          <!-- container of text part -->
-          <div>
-            <h1>TechWave</h1>
-            <p>
-              Your daily dose of tech insights, productivity hacks, and personal
-              growth
-            </p>
-
-            <!-- two button part -->
-            <div class="flex gap-2">
-              <!-- 1st btn -->
-              <div>
-                <button
-                  class="nav-btn flex justify-center items-center text-[#FFFFFF] font-semibold px-5 py-2.5 bg-linear-20 from-[#F7E93F] from-7% via-[#FB09B4] via-45% to-[#9100F8] rounded-full cursor-pointer"
-                >
-                  <!-- <i class="fa-brands fa-spotify align-middle"></i> -->
-                  <div>
-                    <img
-                      class="mr-2"
-                      src="./assets/line-md_spotify.png"
-                      alt=""
-                    />
-                  </div>
-                  <p>Listen On Spotify</p>
-                </button>
-              </div>
-              <!-- 2nd btn -->
-              <div>
-                <button
-                  class="nav-btn flex justify-center items-center text-[#FFFFFF] font-semibold px-4 py-[9px] border rounded-full cursor-pointer"
-                >
-                  <div>
-                    <img class="mr-2" src="./assets/message.png" alt="" />
-                  </div>
-                  <p>Subscribe</p>
-                </button>
+        <div
+          class="py-[100px] h-full bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-center bg-contain"
+        >
+          <div class="max-w-[1200px] w-11/12 mx-auto">
+            <!-- microphone image part -->
+            <div class="w-full mb-10">
+              <div
+                class="w-full h-[350px] flex justify-center items-center bg-[url(./assets/hero-circle.png)] bg-center bg-no-repeat bg-contain relative"
+              >
+                <img class="absolute" src="./assets/microphone.png" alt="" />
+                 <p
+                class="w-[75px] text-center px-2 py-1.5 text-[18px] text-black font-semibold bg-[#00FF88] rounded-3xl absolute bottom-[83%] left-[57%]"
+              >
+                NEW
+                </p>
               </div>
             </div>
+
+            <!-- start text part -->
+            <!-- container of text part -->
+            <div class="flex flex-col justify-center items-center text-center">
+              <h1 class="hero-tech text-[60px] font-extrabold">TechWave</h1>
+              <p class="mb-6">
+                Your daily dose of tech insights, productivity hacks, and
+                personal growth
+              </p>
+
+              <!-- two button part -->
+              <div class="flex gap-2">
+                <!-- 1st btn -->
+                <div>
+                  <button
+                    class="nav-btn flex justify-center items-center text-[#FFFFFF] font-semibold px-5 py-2.5 bg-linear-10 from-[#F7E93F] from-5% via-[#FB09B4] via-40% to-[#9100F8] rounded-full cursor-pointer"
+                  >
+                    <!-- <i class="fa-brands fa-spotify align-middle"></i> -->
+                    <div>
+                      <img
+                        class="mr-2"
+                        src="./assets/line-md_spotify.png"
+                        alt=""
+                      />
+                    </div>
+                    <p>Listen On Spotify</p>
+                  </button>
+                </div>
+                <!-- 2nd btn -->
+                <div>
+                  <button
+                    class="nav-btn flex justify-center items-center text-[#FFFFFF] font-semibold px-6 py-2 border rounded-full cursor-pointer"
+                  >
+                    <div>
+                      <img class="mr-2" src="./assets/message.png" alt="" />
+                    </div>
+                    <p>Subscribe</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- end text part -->
           </div>
-          <!-- end text part -->
         </div>
       </section>
       <!-- end hero section -->
     </header>
     <!-- end header section -->
+    <main>
+      <!-- start about section -->
+       <section>
+        <!-- container of about section -->
+         <div class="max-w-[1200px] w-11/12 mx-auto">
 
-    <main></main>
+          <!-- text part -->
+           <div class="about-text-container text-center w-5/8 mx-auto mb-20">
+            <h1 class="title-text text-5xl font-bold mb-4">About the Podcast</h1>
+            <p>TechWave is your go-to podcast for staying ahead in the fast-paced world of technology.We break down complex topics into digestible insights, explore productivity strategies that actually work,and share stories of personal growth from industry leaders.</p>
+            <br>
+            <p>Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+           </div>
+           <hr class="text-white opacity-10" />
+           
+           <!-- card part -->
+
+           <!-- container of card part -->
+            <div class="grid-card mt-20 mb-20 grid grid-cols-4 justify-items-center">
+              <!-- card 1 -->
+              <div class="mb-10">
+                <p class="text-[#00FF88] text-5xl font-black mb-4">150K+</p>
+                <p>MONTHLY LISTENERS</p>
+              </div>
+              <!-- card 2 -->
+              <div class="mb-10">
+                <p class="text-[#00FF88] text-5xl font-black mb-4">200+</p>
+                <p>EPISODES PUBLISHED</p>
+              </div>
+              <!-- card 3 -->
+              <div class="mb-10">
+                <p class="text-[#00FF88] text-5xl font-black mb-4">4.9 ★</p>
+                <p>AVERAGE RATING</p>
+              </div>
+              <!-- card 4 -->
+              <div class="mb-10">
+                <p class="text-[#00FF88] text-5xl font-black mb-4">50+</p>
+                <p>INDUSTRY EXPERTS</p>
+              </div>
+            </div>
+
+         </div>
+       </section>
+      <!-- end about section -->
+
+      <!-- start choose section -->
+       <section>
+        <!-- container of choose section -->
+        <div class="max-w-[1200px] w-11/12 mx-auto">
+          <!-- title part -->
+           <div class="text-center mx-auto mb-20">
+            <h1 class="title-text text-5xl font-bold mb-4">Why Choose TechWave</h1>
+           </div>
+          <!-- card part -->
+           <!-- container of choose cards -->
+            <div class="grid grid-cols-12 grid-rows-9 gap-5">
+              <!-- card 1 -->
+               <div class="p-10 col-span-4 col-start-1 row-span-6 row-start-1 rounded-2xl bg-[#351165]/40">
+                <img class="mb-4" src="./assets/headphone.png" alt="">
+                <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
+                <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+               </div>
+              <!-- card 2 -->
+               <div class="p-10 col-span-8 col-start-5 row-span-3 row-start-1 rounded-2xl bg-[#351165]/40">
+                <img class="mb-4" src="./assets/device.png" alt="">
+                <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
+                <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+               </div>
+              <!-- card 3 -->
+               <div class="p-10 col-span-8 col-start-5 row-span-3 row-start-4 rounded-2xl bg-[#351165]/40">
+                <img class="mb-4" src="./assets/location.png" alt="">
+                <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
+                <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+               </div>
+               <!-- card 4 -->
+               <div class="p-10 col-span-8 col-start-1 row-span-3 row-start-7 rounded-2xl bg-[#351165]/40">
+                <img class="mb-4" src="./assets/zap-fast.png" alt="">
+                <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
+                <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+               </div>
+              <!-- card 5 -->
+               <div class="p-10 col-span-4 col-start-9 row-span-3 row-start-7 rounded-2xl bg-[#351165]/40">
+                <img class="mb-4" src="./assets/resource.png" alt="">
+                <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
+                <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+               </div>
+               </div>
+            </div>
+        </div>
+       </section>
+      <!-- end choose section -->
+    </main>
 
     <footer></footer>
   </body>
