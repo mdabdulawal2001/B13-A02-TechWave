@@ -29,7 +29,7 @@
       <section>
         <!-- container of navbar -->
         <div
-          class="flex justify-between items-center max-w-[1200px] w-11/12 mx-auto py-6"
+          class="flex justify-between items-center w-11/12 mx-auto py-6 text-center"
         >
           <!-- left text -->
           <div>
@@ -72,17 +72,35 @@
       <section>
         <!-- container of hero section -->
         <div
-          class="py-[100px] h-full bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-center bg-contain"
+          class="small-hero flex flex-row justify-center items-center py-[100px] min-h-[500px] bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-center bg-contain"
         >
           <div class="max-w-[1200px] w-11/12 mx-auto">
             <!-- microphone image part -->
             <div class="w-full mb-10">
-              <div
-                class="w-full h-[350px] flex justify-center items-center bg-[url(./assets/hero-circle.png)] bg-center bg-no-repeat bg-contain relative"
-              >
-                <img class="absolute" src="./assets/microphone.png" alt="" />
+              <div class="w-full flex justify-center items-center relative">
+                <div class="circle-micro-container">
+                  <div
+                    class="flex justify-center items-center"
+                  >
+                    <img
+                      class="circle-image"
+                      src="./assets/hero-circle.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="absolute inset-0 micro-image-container flex justify-center items-center"
+                  >
+                    <img
+                      class="micro-image"
+                      src="./assets/microphone.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
                 <p
-                  class="w-[75px] text-center px-2 py-1.5 text-[18px] text-black font-semibold bg-[#00FF88] rounded-3xl absolute bottom-[83%] left-[57%]"
+                  style="box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5)"
+                  class="small-new w-[75px] text-center px-2 py-1.5 text-[18px] text-black font-semibold bg-[#00FF88] rounded-3xl absolute top-[7%] right-[36%]"
                 >
                   NEW
                 </p>
@@ -91,7 +109,7 @@
 
             <!-- start text part -->
             <!-- container of text part -->
-            <div class="flex flex-col justify-center items-center text-center">
+            <div class="mb-20 flex flex-col justify-center items-center text-center">
               <h1 class="hero-tech text-[60px] font-extrabold">TechWave</h1>
               <p class="mb-6">
                 Your daily dose of tech insights, productivity hacks, and
@@ -197,13 +215,13 @@
         <div class="max-w-[1200px] w-11/12 mx-auto">
           <!-- title part -->
           <div class="text-center mx-auto mb-20">
-            <h1 class="title-text text-5xl font-bold mb-4">
+            <h1 class="title-text title-text text-5xl font-bold mb-4 leading-12">
               Why Choose TechWave
             </h1>
           </div>
           <!-- card part -->
           <!-- container of choose cards -->
-          <div class="grid grid-cols-12 grid-rows-9 gap-5">
+          <div class="grid grid-cols-12 grid-rows-9 gap-5 my-grid">
             <!-- card 1 -->
             <div
               class="choose-card p-10 col-span-4 col-start-1 row-span-6 row-start-1 rounded-2xl bg-[#351165]/40"
@@ -280,7 +298,7 @@
 
           <!-- video cards part -->
           <!-- start video cards container -->
-          <div class="grid grid-cols-3 gap-[30px]">
+          <div class="grid grid-cols-3 gap-[30px] my-grid">
             <!-- card 1 -->
             <div class="h-fit rounded-2xl pb-8 mb-6 bg-[#351165]/40">
               <div>
@@ -385,10 +403,10 @@
             <h1 class="title-text text-5xl font-bold">Meet the Host</h1>
           </div>
           <div
-            class="flex justify-center items-center p-10 gap-6 bg-[#351165]/40 rounded-2xl"
+            class="meet-flex-part flex justify-center items-center p-10 gap-6 bg-[#351165]/40 rounded-2xl"
           >
             <!-- image part -->
-            <div class="border w-[30%]">
+            <div class="meet-image w-[40%]">
               <img class="w-full" src="./assets/host.png" alt="" />
             </div>
             <!-- content part -->
@@ -404,7 +422,7 @@
                 </p>
 
                 <!-- icons -->
-                <div class="flex gap-4">
+                <div class="meet-icons flex gap-4">
                   <div
                     class="text-[#FAFAFA]/45 border rounded-full px-2.5 py-2.5 flex justify-center items-center"
                   >
@@ -438,10 +456,14 @@
       <section>
         <!-- container of footer section -->
         <div>
-          <div class="py-[120px] bg-[url(./assets/footer-bg.png)] bg-center bg-no-repeat bg-contain">
+          <div
+            class="py-[120px] bg-[url(./assets/footer-bg.png)] bg-center bg-no-repeat bg-contain"
+          >
             <!-- title -->
             <div>
-              <h1 class="nav-tech-text text-center mb-8 text-6xl text-[#FFFFFF] font-extrabold">
+              <h1
+                class="nav-tech-text text-center mb-8 text-6xl text-[#FFFFFF] font-extrabold"
+              >
                 Tech<span
                   class="font-extrabold text-transparent bg-clip-text bg-linear-10 from-[#F7E93F] from-0% via-[#FB09B4] via-40% to-[#9100F8]"
                   >Wave</span
@@ -449,31 +471,31 @@
               </h1>
             </div>
             <!-- container of footer icons -->
-             <div class="flex justify-center items-center gap-10 mb-8">
-                <!-- icon 1 -->
-                <div class="flex items-center gap-2">
-                  <div><img src="./assets/line-md_spotify.png" alt="" /></div>
-                  <p class="font-medium">Spotify</p>
-                </div>
-                <!-- icon 2 -->
-                <div class="flex items-center gap-2">
-                  <div><img src="./assets/apple-podcast.png" alt="" /></div>
-                  <p class="font-medium">ApplePodcasts</p>
-                </div>
-                <!-- icon 3 -->
-                <div class="flex items-center gap-2">
-                  <div><img src="./assets/youtube-podcast.png" alt="" /></div>
-                  <p class="font-medium">YouTube</p>
-                </div>
-                <!-- icon 4 -->
-                <div class="flex items-center gap-2">
-                  <div><img src="./assets/twitter.png" alt="" /></div>
-                  <p class="font-medium">Twitter</p>
-                </div>
-             </div>
-             <div class="text-center mb-2">
+            <div class="flex justify-center items-center gap-10 mb-8">
+              <!-- icon 1 -->
+              <div class="flex items-center gap-2">
+                <div><img src="./assets/line-md_spotify.png" alt="" /></div>
+                <p class="font-medium">Spotify</p>
+              </div>
+              <!-- icon 2 -->
+              <div class="flex items-center gap-2">
+                <div><img src="./assets/apple-podcast.png" alt="" /></div>
+                <p class="font-medium">ApplePodcasts</p>
+              </div>
+              <!-- icon 3 -->
+              <div class="flex items-center gap-2">
+                <div><img src="./assets/youtube-podcast.png" alt="" /></div>
+                <p class="font-medium">YouTube</p>
+              </div>
+              <!-- icon 4 -->
+              <div class="flex items-center gap-2">
+                <div><img src="./assets/twitter.png" alt="" /></div>
+                <p class="font-medium">Twitter</p>
+              </div>
+            </div>
+            <div class="text-center mb-2">
               <p>© 2026 TechWave Podcast. All rights reserved.</p>
-             </div>
+            </div>
           </div>
         </div>
       </section>

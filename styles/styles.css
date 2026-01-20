@@ -10,7 +10,8 @@
     }
 }
 
-/* <iframe width="560" height="315" src="https://www.youtube.com/embed/UjqeYvBGhQw?si=sNiQZuBQ8QKBdqys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */
+
+
 
 /* responsive designs */
 
@@ -37,7 +38,27 @@
     }
 
     /* hero section */
-    
+
+    .small-hero{
+        padding-top: 50px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+
+    .circle-image{
+        width: 60%;
+    }
+
+    .micro-image{
+        width: 15%;
+    }
+
+    .small-new{
+        top: 5%;
+        right: 15%;
+    }
 
     .hero-tech{
         font-size: 40px;
@@ -57,7 +78,34 @@
     }
 
     /* choose section */
+    .my-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .my-grid > .col-span-4,
+    .my-grid > .col-span-8,
+    .my-grid > .row-span-6,
+    .my-grid > .row-span-3{
+        grid-column: auto;
+        grid-row: auto;
+  }
 
+  /* meet section */
+  .meet-flex-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .meet-image{
+    width: 70%;
+  }
+  .meet-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 }
 
@@ -75,6 +123,8 @@
     .image-icon{
         display: none;
     }
+
+
      /* hero section */
 
     .hero-tech{
