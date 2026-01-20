@@ -119,10 +119,11 @@
   }
 
   /* footer section */
-  .footer-container bg-cover{
+ .footer-image{
     width: 100%;
-    background-size: contain;
-  }
+    height: 150px;
+    object-fit: contain;
+ }
 
 }
 
