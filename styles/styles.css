@@ -107,6 +107,12 @@
     align-items: center;
   }
 
+  /* footer section */
+  .footer-container{
+    width: 80%;
+    margin: 0 auto;
+  }
+
 }
 
 /* medium device */
