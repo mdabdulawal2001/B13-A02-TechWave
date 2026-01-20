@@ -44,16 +44,16 @@
           <!-- nav items -->
           <nav class="nav-items-nav-btn">
             <ul class="flex gap-8 text-[#FFFFFF] font-medium">
-              <li><a href="">About</a></li>
-              <li><a href="">Episodes</a></li>
-              <li><a href="">Host</a></li>
+              <li><a class="hover:text-[#f605b9ce] transition-colors duration-300" href="">About</a></li>
+              <li><a class="hover:text-[#f605b9ce] transition-colors duration-300" href="">Episodes</a></li>
+              <li><a class="hover:text-[#f605b9ce] transition-colors duration-300" href="">Host</a></li>
             </ul>
           </nav>
 
           <!-- right button -->
           <div class="nav-items-nav-btn">
             <button
-              class="nav-btn text-[#FFFFFF] font-semibold px-4 py-2.5 bg-linear-20 from-[#F7E93F] from-7% via-[#FB09B4] via-45% to-[#9100F8] rounded-full cursor-pointer animate-pulse"
+              class="nav-btn text-[#FFFFFF] font-semibold px-4 py-2.5 bg-linear-20 from-[#F7E93F] from-7% via-[#FB09B4] via-45% to-[#9100F8] rounded-full cursor-pointer animate-pulse "
             >
               Subscribe
               <i class="fa-solid fa-arrow-right-long align-middle"></i>
@@ -119,7 +119,7 @@
                 <!-- 1st btn -->
                 <div>
                   <button
-                    class="nav-btn flex justify-center items-center text-[#FFFFFF] font-semibold px-5 py-2.5 bg-linear-10 from-[#F7E93F] from-5% via-[#FB09B4] via-40% to-[#9100F8] rounded-full cursor-pointer"
+                    class="nav-btn flex justify-center items-center text-[#FFFFFF] font-semibold px-5 py-2.5 bg-linear-10 from-[#F7E93F] from-5% via-[#FB09B4] via-40% to-[#9100F8] rounded-full cursor-pointer animate-pulse"
                   >
                     <!-- <i class="fa-brands fa-spotify align-middle"></i> -->
                     <div>
@@ -135,7 +135,7 @@
                 <!-- 2nd btn -->
                 <div>
                   <button
-                    class="nav-btn flex justify-center items-center text-[#FFFFFF] font-semibold px-6 py-2 border rounded-full cursor-pointer"
+                    class="nav-btn flex justify-center items-center text-[#FFFFFF] font-semibold px-6 py-2 border rounded-full cursor-pointer hover:bg-linear-10 from-[#F7E93F] from-5% via-[#FB09B4] via-40% to-[#9100F8] transition-bg duration-600 ease-in-out"
                   >
                     <div>
                       <img class="mr-2" src="./assets/message.png" alt="" />
@@ -232,7 +232,7 @@
           <div class="grid grid-cols-12 grid-rows-9 gap-5 my-grid">
             <!-- card 1 -->
             <div
-              class="choose-card p-10 col-span-4 col-start-1 row-span-6 row-start-1 rounded-2xl bg-[#351165]/40"
+              class="choose-card flex flex-col items-start justify-center p-10 col-span-4 col-start-1 row-span-6 row-start-1 rounded-2xl bg-[#351165]/40"
             >
               <img class="mb-4" src="./assets/headphone.png" alt="" />
               <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
@@ -244,7 +244,7 @@
             </div>
             <!-- card 2 -->
             <div
-              class="choose-card p-10 col-span-8 col-start-5 row-span-3 row-start-1 rounded-2xl bg-[#351165]/40"
+              class="choose-card flex flex-col items-start justify-center p-10 col-span-8 col-start-5 row-span-3 row-start-1 rounded-2xl bg-[#351165]/40"
             >
               <img class="mb-4" src="./assets/device.png" alt="" />
               <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
@@ -256,7 +256,7 @@
             </div>
             <!-- card 3 -->
             <div
-              class="choose-card p-10 col-span-8 col-start-5 row-span-3 row-start-4 rounded-2xl bg-[#351165]/40"
+              class="choose-card flex flex-col items-start justify-center p-10 col-span-8 col-start-5 row-span-3 row-start-4 rounded-2xl bg-[#351165]/40"
             >
               <img class="mb-4" src="./assets/location.png" alt="" />
               <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
@@ -268,7 +268,7 @@
             </div>
             <!-- card 4 -->
             <div
-              class="choose-card p-10 col-span-8 col-start-1 row-span-3 row-start-7 rounded-2xl bg-[#351165]/40"
+              class="choose-card flex flex-col items-start justify-center p-10 col-span-8 col-start-1 row-span-3 row-start-7 rounded-2xl bg-[#351165]/40"
             >
               <img class="mb-4" src="./assets/zap-fast.png" alt="" />
               <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
@@ -280,7 +280,7 @@
             </div>
             <!-- card 5 -->
             <div
-              class="choose-card p-10 col-span-4 col-start-9 row-span-3 row-start-7 rounded-2xl bg-[#351165]/40"
+              class="choose-card flex flex-col items-start justify-center p-10 col-span-4 col-start-9 row-span-3 row-start-7 rounded-2xl bg-[#351165]/40"
             >
               <img class="mb-4" src="./assets/resource.png" alt="" />
               <h3 class="text-2xl font-bold mb-4">Premium Audio Quality</h3>
@@ -432,22 +432,22 @@
                 <!-- icons -->
                 <div class="meet-icons flex gap-4">
                   <div
-                    class="text-[#FAFAFA]/45 border rounded-full px-2.5 py-2.5 flex justify-center items-center"
+                    class="cursor-pointer text-[#FAFAFA]/45 border rounded-full px-2.5 py-2.5 flex justify-center items-center"
                   >
                     <img class="" src="./assets/linkedin.png" alt="" />
                   </div>
                   <div
-                    class="text-[#FAFAFA]/45 border rounded-full px-2.5 py-2.5 flex justify-center items-center"
+                    class="cursor-pointer text-[#FAFAFA]/45 border rounded-full px-2.5 py-2.5 flex justify-center items-center"
                   >
                     <img class="" src="./assets/twitter.png" alt="" />
                   </div>
                   <div
-                    class="text-[#FAFAFA]/45 border rounded-full px-2.5 py-2.5 flex justify-center items-center"
+                    class="cursor-pointer text-[#FAFAFA]/45 border rounded-full px-2.5 py-2.5 flex justify-center items-center"
                   >
                     <img class="" src="./assets/instagram.png" alt="" />
                   </div>
                   <div
-                    class="text-[#FAFAFA]/45 border rounded-full px-2.5 py-2.5 flex justify-center items-center"
+                    class="cursor-pointer text-[#FAFAFA]/45 border rounded-full px-2.5 py-2.5 flex justify-center items-center"
                   >
                     <img class="" src="./assets/youtube.png" alt="" />
                   </div>
@@ -486,24 +486,24 @@
               class="m-4 flex flex-wrap justify-center items-center gap-10 pb-8"
             >
               <!-- icon 1 -->
-              <div class="flex items-center gap-2">
+              <div class="cursor-pointer flex items-center gap-2">
                 <div><img src="./assets/line-md_spotify.png" alt="" /></div>
-                <p class="font-medium">Spotify</p>
+                <p class="font-medium hover:text-[#f605b9ce] transition-colors duration-300">Spotify</p>
               </div>
               <!-- icon 2 -->
-              <div class="flex items-center gap-2">
+              <div class="cursor-pointer flex items-center gap-2">
                 <div><img src="./assets/apple-podcast.png" alt="" /></div>
-                <p class="font-medium">ApplePodcasts</p>
+                <p class="font-medium hover:text-[#f605b9ce] transition-colors duration-300">ApplePodcasts</p>
               </div>
               <!-- icon 3 -->
-              <div class="flex items-center gap-2">
+              <div class="cursor-pointer flex items-center gap-2">
                 <div><img src="./assets/youtube-podcast.png" alt="" /></div>
-                <p class="font-medium">YouTube</p>
+                <p class="font-medium hover:text-[#f605b9ce] transition-colors duration-300">YouTube</p>
               </div>
               <!-- icon 4 -->
-              <div class="flex items-center gap-2">
+              <div class="cursor-pointer flex items-center gap-2">
                 <div><img src="./assets/twitter.png" alt="" /></div>
-                <p class="font-medium">Twitter</p>
+                <p class="font-medium hover:text-[#f605b9ce] transition-colors duration-300">Twitter</p>
               </div>
             </div>
             <div class="text-center mb-2">
