@@ -24,12 +24,12 @@
   </head>
   <body class="text-white font-inter bg-[#1A0B2E]">
     <!-- start header section -->
-    <header>
+    <header class="">
       <!-- start navbar section -->
       <section>
         <!-- container of navbar -->
         <div
-          class="flex justify-between items-center w-11/12 mx-auto py-6 text-center"
+          class="flex justify-between items-center max-w-[1200px] w-11/12 mx-auto py-6 text-center"
         >
           <!-- left text -->
           <div>
@@ -71,30 +71,28 @@
       <!-- start hero section -->
       <section>
         <!-- container of hero section -->
-        <div
-          class="small-hero flex flex-row justify-center items-center py-[100px] min-h-[500px] bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-center bg-contain"
-        >
-          <div class="max-w-[1200px] w-11/12 mx-auto">
+        <div class="">
+          <div
+            class="small-hero h-[650px] bg-[url(./assets/hero-bg.png)] bg-no-repeat bg-center bg-contain pb-10 relative overflow-visible"
+          ></div>
+          <div class="hero-image-content flex flex-col justify-center items-center max-w-[1200px] w-11/12 mx-auto -mt-[600px] left-[85px] mb-14 z-10">
             <!-- microphone image part -->
             <div class="w-full mb-10">
               <div class="w-full flex justify-center items-center relative">
-                <div class="circle-micro-container">
-                  <div class="flex justify-center items-center">
-                    <img
-                      class="circle-image"
-                      src="./assets/hero-circle.png"
-                      alt=""
-                    />
-                  </div>
-                  <div
-                    class="absolute inset-0 micro-image-container flex justify-center items-center animate-pulse"
-                  >
-                    <img
-                      class="micro-image"
-                      src="./assets/microphone.png"
-                      alt=""
-                    />
-                  </div>
+                <div
+                  class="circle-micro-container relative flex justify-center items-center"
+                >
+                  <img
+                    class="circle-image"
+                    src="./assets/hero-circle.png"
+                    alt=""
+                  />
+
+                  <img
+                    class="micro-image absolute animate-pulse"
+                    src="./assets/microphone.png"
+                    alt=""
+                  />
                 </div>
                 <p
                   style="box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5)"
@@ -108,7 +106,7 @@
             <!-- start text part -->
             <!-- container of text part -->
             <div
-              class="mb-20 flex flex-col justify-center items-center text-center"
+              class="hero-content mb-20 flex flex-col justify-center items-center text-center z-10"
             >
               <h1 class="hero-tech text-[60px] font-extrabold">TechWave</h1>
               <p class="mb-6">
@@ -156,7 +154,7 @@
     <!-- end header section -->
     <main>
       <!-- start about section -->
-      <section>
+      <section class="">
         <!-- container of about section -->
         <div class="max-w-[1200px] w-11/12 mx-auto">
           <!-- text part -->
@@ -186,22 +184,30 @@
           >
             <!-- card 1 -->
             <div class="mb-10">
-              <p class="text-[#00FF88] text-5xl font-black mb-4">150K+</p>
+              <p class="title-text text-[#00FF88] text-5xl font-black mb-4">
+                150K+
+              </p>
               <p>MONTHLY LISTENERS</p>
             </div>
             <!-- card 2 -->
             <div class="mb-10">
-              <p class="text-[#00FF88] text-5xl font-black mb-4">200+</p>
+              <p class="title-text text-[#00FF88] text-5xl font-black mb-4">
+                200+
+              </p>
               <p>EPISODES PUBLISHED</p>
             </div>
             <!-- card 3 -->
             <div class="mb-10">
-              <p class="text-[#00FF88] text-5xl font-black mb-4">4.9 ★</p>
+              <p class="title-text text-[#00FF88] text-5xl font-black mb-4">
+                4.9 ★
+              </p>
               <p>AVERAGE RATING</p>
             </div>
             <!-- card 4 -->
             <div class="mb-10">
-              <p class="text-[#00FF88] text-5xl font-black mb-4">50+</p>
+              <p class="title-text text-[#00FF88] text-5xl font-black mb-4">
+                50+
+              </p>
               <p>INDUSTRY EXPERTS</p>
             </div>
           </div>
@@ -455,12 +461,12 @@
     </main>
 
     <footer>
-      <section class="">
+      <section class="footer-container">
         <!-- container of footer section -->
-        <div class="">
-          <div
-            class="py-[90px] bg-[url(./assets/footer-bg.png)] bg-center bg-no-repeat bg-cover"
-          >
+        <div
+          class="min-h-[248px] py-[90px] bg-[url(../assets/footer-bg.png)] bg-center bg-no-repeat bg-covar"
+        >
+          <div class="">
             <!-- title -->
             <div>
               <h1
@@ -473,7 +479,9 @@
               </h1>
             </div>
             <!-- container of footer icons -->
-            <div class="m-4 flex flex-wrap justify-center items-center gap-10 pb-8">
+            <div
+              class="m-4 flex flex-wrap justify-center items-center gap-10 pb-8"
+            >
               <!-- icon 1 -->
               <div class="flex items-center gap-2">
                 <div><img src="./assets/line-md_spotify.png" alt="" /></div>
