@@ -144,8 +144,38 @@
 
     .grid-card{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    /* choose section */
+    .my-grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .my-grid > .col-span-4,
+    .my-grid > .col-span-8,
+    .my-grid > .row-span-6,
+    .my-grid > .row-span-3{
+        grid-column: auto;
+        grid-row: auto;
+  }
+
+  /* meet section */
+  .meet-flex-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .meet-image{
+    width: 40%;
+  }
+  .meet-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
 }
